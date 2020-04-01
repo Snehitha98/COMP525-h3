@@ -35,9 +35,9 @@ def main():
     (replace with short statement about the purpose of this function)
     """
 
-    # simplest test case for count_develooperers_by_country is simplecount1.csv
-    # that has one country, xxx, with yyy developeoprers
-    filename = 'simplecount1.csv'
+    # simplest test case for count_develooperers_by_country is countdevel1.csv
+    # that has only one country in the small dataset
+    filename = 'countdevel1.csv'
     actual_result = DevStats.count_developers_by_country(filename)
     print(f'developers by country in {filename} are: {actual_result}')
 

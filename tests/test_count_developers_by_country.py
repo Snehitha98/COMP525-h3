@@ -16,14 +16,14 @@ class TestCountDevelopersByCountry(unittest.TestCase):
         (not sure whether we need this method)
         """
 
-    def test_brief_count_developers_by_country(self):
+    def test_one_country(self):
         """
         (add your docstring)
         """
         # Remove these two statements below. Were added to remove pylint errors.
         DevStats.count_developers_by_country('fake.csv')
         self.assertDictEqual({}, {})
-        
+
         # define and initialize test_case
         # define and initialize actual_result by calling method with test_case
         # argument
