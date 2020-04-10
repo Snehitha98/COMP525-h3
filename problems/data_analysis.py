@@ -1,14 +1,14 @@
 """
 data_analysis.py
-(replace this with short statement about the purpose of the module)
-(replace this with your name)
-(replace this with two lines: created date and updated date)
+Practice datasets,dictionaries,text files
+Snehitha Mamidi
+created date : April 3,2020
+updated date : April 10,2020
 """
-
 
 class DevStats():
     """
-    (replace this with short statement about the purpose of the class)
+    Data processing functionality
     """
     @classmethod
     def count_developers_by_country(cls, filename):
@@ -29,17 +29,10 @@ class DevStats():
         (add description of returns)
         """
 
-
 def main():
     """
-    (replace with short statement about the purpose of this function)
+    main function
     """
-
-    # simplest test case for count_develooperers_by_country is countdevel1.csv
-    # that has only one country in the small dataset
-    filename = 'countdevel1.csv'
-    actual_result = DevStats.count_developers_by_country(filename)
-    print(f'developers by country in {filename} are: {actual_result}')
 
 
 if __name__ == '__main__':
