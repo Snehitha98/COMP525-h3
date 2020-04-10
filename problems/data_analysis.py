@@ -35,10 +35,12 @@ class DevStats():
     @classmethod
     def average_salary_by_gender(cls, filename):
         """
-        (replace with complete docstring.
-        It is an adaptation of  Activity 5 in StackOverflow Developers Survey
-        (add description of paramter)
-        (add description of returns)
+        Create a dictionary keyed by gender and values are the
+        average salary of each gender type.
+        filename: string that has the name of the CSV text file
+        Returns: dictionary
+           keys are gender
+           values are average salary of each gender
         """
 
 def main():
