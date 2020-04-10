@@ -20,6 +20,17 @@ class DevStats():
            keys are country names
            values are the number of developers in each country
         """
+        file_ref = open(filename, 'r')
+        count_developers_by_country = {}
+        for line in file_ref.readlines()[1:]:
+            lst = line.split('|')
+            country_name = lst[1]
+            if country_name in count_developers_by_country:
+                count_developers_by_country[country_name] += 1
+            else:
+                count_developers_by_country[country_name] = 1
+        file_ref.close()
+        return count_developers_by_country
 
     @classmethod
     def average_salary_by_gender(cls, filename):
