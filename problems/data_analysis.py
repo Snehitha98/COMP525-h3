@@ -34,6 +34,17 @@ def main():
     """
     main function
     """
+    filename = 'countdevel1.csv'
+    actual_result = DevStats.count_developers_by_country(filename)
+    print(f'developers by country in {filename} are: {actual_result}')
+
+    filename = 'countdevel2.csv'
+    actual_result = DevStats.count_developers_by_country(filename)
+    print(f'developers by country in {filename} are: {actual_result}')
+
+    filename = 'stats.csv'
+    actual_result = DevStats.count_developers_by_country(filename)
+    print(f'developers by country in {filename} are: {actual_result}')
 
 
 if __name__ == '__main__':
