@@ -59,6 +59,18 @@ def main():
     actual_result = DevStats.count_developers_by_country(filename)
     print(f'developers by country in {filename} are: {actual_result}')
 
+    filename = 'avgsalary1.csv'
+    actual_result = DevStats.average_salary_by_gender(filename)
+    print(f'average salary by gender in {filename} are: {actual_result}')
+
+    filename = 'avgsalary2.csv'
+    actual_result = DevStats.average_salary_by_gender(filename)
+    print(f'average salary by gender in {filename} are: {actual_result}')
+
+    filename = 'stats.csv'
+    actual_result = DevStats.average_salary_by_gender(filename)
+    print(f'average salary by gender in {filename} are: {actual_result}')
+
 
 if __name__ == '__main__':
     main()
