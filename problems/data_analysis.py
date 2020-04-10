@@ -5,6 +5,7 @@ Snehitha Mamidi
 created date : April 3,2020
 updated date : April 10,2020
 """
+import statistics
 
 class DevStats():
     """
@@ -42,6 +43,23 @@ class DevStats():
            keys are gender
            values are average salary of each gender
         """
+        file_ref = open(filename, 'r')
+        lst_salary_by_gender = {}
+        for line in file_ref.readlines()[1:]:
+            lst = line.split('|')
+            gender_name = lst[6]
+            converted_salary = lst[4]
+            if gender_name in lst_salary_by_gender:
+                lst_salary_by_gender[gender_name] += [converted_salary]
+            else:
+                lst_salary_by_gender[gender_name] = [converted_salary]
+        average_salary_by_gender = {}
+        for key in lst_salary_by_gender:
+            str_to_int = list(map(float, lst_salary_by_gender[key]))
+            avg_salary = statistics.mean(str_to_int)
+            average_salary_by_gender[key] = avg_salary
+        file_ref.close()
+        return average_salary_by_gender
 
 def main():
     """
