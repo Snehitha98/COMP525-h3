@@ -13,11 +13,12 @@ class DevStats():
     @classmethod
     def count_developers_by_country(cls, filename):
         """
-        (replace with complete docstring.
-        It is an adaptation of  Activity 2 in StackOverflow Developers Survey)
+        Create a dictionary keyed by country names and values are the
+        number of developers in each country
         filename: string that has the name of the CSV text file
-        Returns: dictionary in which keys are the country names and values are
-            the number of devevelopeoprs in each counntry
+        Returns: dictionary
+           keys are country names
+           values are the number of developers in each country
         """
 
     @classmethod
